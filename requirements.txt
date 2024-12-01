@@ -3,8 +3,7 @@ einops
 fastapi
 gradio==5.3.0
 janus
-lagent==0.5.0rc1
-lmdeploy==0.5.3
+lagent==0.5.0rc2
 matplotlib
 pydantic==2.6.4
 python-dotenv
