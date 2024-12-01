@@ -93,3 +93,23 @@ internlm_silicon = dict(
     repetition_penalty=1.02,
     stop_words=["<|im_end|>"],
 )
+
+
+internlm_api = dict(
+    type=GPTAPI,
+    model_type="internlm2.5-latest",
+    key=os.environ.get("InternLM_API_KEY", "YOUR InternLM API KEY https://internlm.intern-ai.org.cn/api/document"),
+    api_base="https://internlm-chat.intern-ai.org.cn/puyu/api/v1/chat/completions",
+    meta_template=[
+        dict(role="system", api_role="system"),
+        dict(role="user", api_role="user"),
+        dict(role="assistant", api_role="assistant"),
+        dict(role="environment", api_role="system"),
+    ],
+    top_p=0.8,
+    top_k=1,
+    temperature=0,
+    max_new_tokens=8192,
+    repetition_penalty=1.02,
+    stop_words=["<|im_end|>"],
+)
