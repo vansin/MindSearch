@@ -46,7 +46,7 @@ mv .env.example .env
 Setup FastAPI Server.
 
 ```bash
-python -m mindsearch.app --lang en --model_format internlm_server --search_engine DuckDuckGoSearch --asy 
+python -m mindsearch.app --lang en --model_format internlm_silicon --search_engine DuckDuckGoSearch --asy 
 ```
 
 - `--lang`: language of the model, `en` for English and `cn` for Chinese.
